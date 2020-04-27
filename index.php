@@ -7,7 +7,7 @@
 	<body>
 
     <header>
-		<h1><a href="?page=accueil" id="logo">Les Pépins Punks</a></h1>
+		<h1>Les Pépins Punks</h1>
         <nav id="nav">
             <a href="?page=accueil">Accueil</a>
             <a href="?page=apropos">C'est quoi ?</a>
@@ -22,26 +22,24 @@
         <?php   
             $catOK = array(
             'accueil' => 'pages/accueil.php',
-            'contact' => 'pages/contact.php',
-            'lesrecettes' => 'pages/recette.php',
-            'recette' => 'pages/recettePage.php',
             'apropos' => 'pages/apropos.php',
-            'ressource' => 'pages/ressource.php',
+            'lesrecettes' => 'pages/lesrecettes.php',
+            'blog' => 'pages/blog.php',
+            'contact' => 'pages/contact.php',
+            'adh' => 'pages/adherent.php',
 
-            'adherent' => 'pages/adherent.php',
-            'postrecette' => 'pages/adherent_PostRecette.php',
-            'editpage' => 'pages/adherent_editpage.php',
-            'panier' => 'pages/adherent_panier.php',
+            'recette' => 'pages/recette.php',
             );
 
             if ((isset($_GET['page'])) && (isset($catOK[$_GET['page']])))
             {include($catOK[$_GET['page']]);}
             else
-            {include('page/accueil.php'); }
+            {include('pages/accueil.php'); }
         ?>
     </main>
 
     <footer>
+        <br><br>
 		Pied de page <a href="#" id="logo">Des amis</a>
     </footer>
 
