@@ -213,6 +213,7 @@ p {
         line-height: 2.5;
         padding: 0;
         width: 100%;
+        padding-top: 100px;
     }
     .menu nav input {
         background: rgba(0, 0, 0, .2);
@@ -237,6 +238,7 @@ p {
     }
     .menu .burger:before {
         content: 'Menu';
+        font-family: "Savate";
     }
     .menu .burger:checked:before {
         content: 'poireauX';
@@ -247,10 +249,13 @@ p {
 }
 
 @media all and (max-width: 700px) {
+    .columns {
+        display: inline;
+    }
     main {
-        width: 100%;
+        width: 98%;
     }
     .sidebar-Droit {
-        width: 100%;
+        width: 98% !important;
     }
 }
