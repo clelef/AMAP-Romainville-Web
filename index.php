@@ -46,11 +46,10 @@
         <?php
         $catOK = array(
           'accueil' => 'pages/accueil.php',
-          'apropos' => 'pages/apropos.php',
           'lesrecettes' => 'pages/lesrecettes.php',
           'blog' => 'pages/blog.php',
-          'contact' => 'pages/contact.php',
           'adh' => 'pages/adherent.php',
+          'contact' => 'pages/contact.php',
 
           'recette' => 'pages/recette.php',
         );
