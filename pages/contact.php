@@ -6,12 +6,12 @@
     <br><br>
     <form id="myform" class="cssform" action="?page=contact">
         <label for="user">Nom :</label><br>
-        <input type="text" id="user" required style="width:500px;" /><br><br>
+        <input type="text" id="user" required style="width:90%;" /><br><br>
         <label for="emailaddress">Email :</label><br>
-        <input type="email" id="emailaddress" required style="width:500px;" /><br><br>
+        <input type="email" id="emailaddress" required style="width:90%;" /><br><br>
         <label for="comments">Message :</label><br>
-        <textarea id="comments" rows="4" cols="25" required style="width:500px;"></textarea><br><br>
-        <input type="submit" value="Envoyer" />
+        <textarea id="comments" rows="4" cols="25" required style="width:90%;"></textarea><br><br>
+        Systeme CAPCHA google ? Addition ? Champ caché ?<br><input type="submit" value="Envoyer" />
     </form>
 </main>
 
