@@ -34,12 +34,15 @@ body {
     text-align: center;
 }
 
-.content {
-    display: flex;
-    flex: 1;
+footer>table {
+    margin: auto;
 }
 
-.columns {
+footer>td {
+    text-align: center;
+}
+
+.content {
     display: flex;
     flex: 1;
 }
@@ -66,7 +69,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100px;
-    width: 500px;
+    width: 600px;
     margin-top: -70px;
     margin-left: 20px;
     position: absolute;
@@ -75,14 +78,6 @@ body {
 .boxDroit {
     border-bottom: 1px dotted black;
     padding: 20px;
-}
-
-footer>table {
-    margin: auto;
-}
-
-footer>td {
-    text-align: center;
 }
 
 
@@ -164,7 +159,8 @@ p {
     #logoPepinsPunk {
         margin-top: 0;
         top: 10px;
-        height: 10vw;
+        height: 11vw;
+        width: 60%;
     }
     .sidebar-Menu {
         width: 0%;
@@ -206,14 +202,16 @@ p {
         overflow: hidden;
         text-transform: uppercase;
         transition: height .2s;
+        background-image: url("asset/fondMobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .menu nav>* {
         display: block;
         letter-spacing: 1px;
         line-height: 2.5;
         padding: 0;
-        width: 100%;
-        padding-top: 100px;
+        width: 80%;
     }
     .menu nav input {
         background: rgba(0, 0, 0, .2);
@@ -237,19 +235,25 @@ p {
         right: 10px;
     }
     .menu .burger:before {
-        content: 'Menu';
-        font-family: "Savate";
+        content: url(asset/poireauM.png);
     }
     .menu .burger:checked:before {
-        content: 'poireauX';
+        content: url(asset/poireauX.png);
     }
     .menu .burger:checked+nav {
         height: 100vh;
     }
+    .center-div {
+        margin: 10%;
+        height: 80%;
+        border: 1px dotted black;
+        background: white;
+        padding: 2%;
+    }
 }
 
 @media all and (max-width: 700px) {
-    .columns {
+    .content {
         display: inline;
     }
     main {
